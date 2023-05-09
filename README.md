@@ -21,3 +21,13 @@
   4.4 Rode o comando docker-compose up airflow init
   4.5 Abra um novo terminal e rode docker-compose up
   4.6 Acesse [localhost:8080](http://localhost:8080/home)
+
+  5. Instalação do Meltano
+    5.1 Criar a pasta do Meltano
+    5.2 Seguir a recomendação da documentação (https://docs.meltano.com/guide/installation-guide)
+    5.3 Rodar o comando docker pull meltano/meltano
+    5.4 Inicializar o projeto com cd /your/projects/directory
+                                      docker run -v "$(pwd)":/projects \
+                                                  -w /projects \
+                                                  meltano/meltano init yourprojectname
+    5.5 cd yourprojectname
